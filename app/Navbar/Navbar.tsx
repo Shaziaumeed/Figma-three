@@ -140,6 +140,7 @@
 
 
 // "use client";
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaEnvelope, FaShoppingCart, FaUser } from 'react-icons/fa';
 import Image from 'next/image';
@@ -214,7 +215,10 @@ const Navbar = () => {
             <li className="hover:text-purple-700 cursor-pointer">Contact</li>
           </ul>
           <div className="flex flex-col-reverse gap-4">
-            <a className="font-inter font-bold text-[14px] leading-[45px] tracking-[0px] text-center bg-[#4ACAC6] text-white px-6 py-1 rounded-[30px]" href="/">Join now!</a>
+          <Link href="/" className="font-inter font-bold text-[14px] leading-[45px] tracking-[0px] text-center bg-[#4ACAC6] text-white px-6 py-1 rounded-[30px]">
+  Join now!
+</Link>
+            {/* <a className="font-inter font-bold text-[14px] leading-[45px] tracking-[0px] text-center bg-[#4ACAC6] text-white px-6 py-1 rounded-[30px]" href="/">Join now!</a> */}
             <div className='flex flex-row gap-4'>
               <FaEnvelope className="text-gray-700 text-lg cursor-pointer" />
               <FaShoppingCart className="text-gray-700 text-lg cursor-pointer" />
